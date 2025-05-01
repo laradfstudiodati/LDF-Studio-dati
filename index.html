@@ -1,172 +1,59 @@
-
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Servizi contabili e dichiarazioni fiscali online per privati, imprese e professionisti.">
-    <meta name="keywords" content="dichiarazioni online, contabilità online, 730 online, Unico, F24, IMU, partita IVA">
-    <meta name="author" content="LDF Studio Dati">
-    <title>LDF Studio Dati - Servizi contabili online</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Contabilità online e dichiarazioni fiscali con trasparenza e professionalità.">
+  <title>LDF Studio Dati – Contabilità e Dichiarazioni Online</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #fff; color: #222; }
+    header, footer { background: #1f4e5f; color: white; text-align: center; padding: 1em; }
+    .section { padding: 1.5em; max-width: 1000px; margin: auto; }
+    .orange-box { background-color: #fff3e0; border-left: 5px solid #ffa500; padding: 1em; margin: 1em 0; }
+    button { background: #ffa500; color: white; padding: 0.5em 1em; border: none; cursor: pointer; margin-right: 1em; }
+    .details { display: none; background: #f9f9f9; padding: 1em; margin-top: 0.5em; border: 1px solid #ccc; }
+    a { color: #1f4e5f; text-decoration: none; font-weight: bold; }
+  </style>
+  <script>
+    function toggleDetails(id) {
+      var e = document.getElementById(id);
+      e.style.display = (e.style.display === 'block') ? 'none' : 'block';
+    }
+  </script>
 </head>
 <body>
-    <header>
-        <img src="logo_ldf.png" alt="Logo LDF Studio" class="logo">
-        <h1>LDF Studio Dati</h1>
-        <p>Elaborazione dati contabili e fiscali</p>
-    </header>
+<header>
+  <h1>LDF Studio Dati</h1>
+  <p>Elaborazione dati contabili e fiscali</p>
+</header>
+<div class="section">
+  <h2>Chi sono</h2>
+  <p>Dott.ssa Lara Di Filippo – Esperienza ventennale in contabilità e dichiarazioni fiscali...</p>
+</div>
 
-    <nav>
-        <a href="#chi-sono">Chi sono</a>
-        <a href="#servizi">Servizi</a>
-        <a href="#contatti">Contatti</a>
-    </nav>
+<!-- SEZIONI SERVIZI QUI: PRIVATI, IMPRESE, AGGIUNTIVI, ALTRI, con BOTTONI -->
 
-    <main>
-        <section id="chi-sono">
-            <h2>Chi sono</h2>
-            <p>Dott.ssa Lara Di Filippo – Esperienza ventennale in contabilità e dichiarazioni fiscali. Lavoro con precisione, trasparenza e vicinanza al cliente, offrendo consulenze su misura per professionisti, imprese e privati. Offro servizi di contabilità online e dichiarazioni fiscali online (730, Unico, Dichiarazioni Iva, Lipe).</p>
-        </section>
+<div class="section">
+  <h2>Informazioni Utili</h2>
+  <p><a href="Guida_PMI_Presentazione.pdf" download>📘 Scarica la guida per le Piccole e Medie Imprese (PDF)</a></p>
+</div>
 
-        
-<section id="servizi">
-<h2>Servizi offerti e tariffe</h2>
-<div class="service-category">
-<h3>Per Privati</h3>
-<div class="service-box">
-<h4>Dichiarazione redditi 730 e UnicoPF senza partita iva (solo redditi italiani) - 100€</h4>
-<button onclick="window.open('https://paypal.me/LDFstudiodati2025')">Acquista</button>
-<button onclick="toggleDetails('dettagli1')">Dettagli</button>
-<p id="dettagli1" class="hidden">Il servizio comprende oltre alla redazione ed invio all’Agenzia dell’ Entrate della Dichiarazione, anche la redazione degli F24 ma non l’invio degli stessi all’ADE, quindi sarà cura del contribuente effettuare il pagamento con i canali convenzionali(Banca, Poste,ecc) in caso di crediti da compensare si può acquistare il servizio aggiuntivo per l’invio, non il visto di conformità.</p>
+<div class="section" id="contatti">
+  <h2>Contatti</h2>
+  <p>📞 +39 349 6408105<br/>
+     📧 laradfstudiodati@gmail.com | lara.di.filippo@pec.it<br/>
+     📍 Via Nazionale Adriatica Sud 95/E – 66023 Francavilla al Mare (CH)</p>
+  <form action="mailto:laradfstudiodati@gmail.com" method="post" enctype="text/plain">
+    <label>Nome:<br/><input type="text" name="nome"></label><br/>
+    <label>Email:<br/><input type="email" name="email"></label><br/>
+    <label>Messaggio:<br/><textarea name="messaggio"></textarea></label><br/>
+    <button type="submit">Invia</button>
+  </form>
 </div>
-<div class="service-box">
-<h4>Dichiarazione redditi 730 e UnicoPF (redditi italiani, esteri e criptovalute) - 150€</h4>
-<button onclick="window.open('https://paypal.me/LDFstudiodati2025')">Acquista</button>
-<button onclick="toggleDetails('dettagli2')">Dettagli</button>
-<p id="dettagli2" class="hidden">Il servizio comprende oltre alla redazione ed invio all’Agenzia dell’ Entrate della Dichiarazione, anche la redazione degli F24 ma non l’invio degli stessi all’ADE, quindi sarà cura del contribuente effettuare il pagamento con i canali convenzionali(Banca, Poste,ecc) in caso di crediti da compensare si può acquistare il servizio aggiuntivo per l’invio, non il visto di conformità.</p>
-</div>
-</div>
-<div class="service-category">
-<h3>Per Imprese, Società di persone e Professionisti</h3>
-<div class="service-box">
-<h4>Contabilità in Regime forfettario (imprese e lavoratori autonomi) - 500€ annuali</h4>
-<button onclick="window.open('https://paypal.me/LDFstudiodati2025')">Acquista</button>
-<button onclick="toggleDetails('dettagli3')">Dettagli</button>
-<p id="dettagli3" class="hidden">Il servizio comprende, la redazione della contabilità e della dichiarazione dei redditi annuale con relativo invio all’ADE, la redazione degli F24 ma non l’invio degli stessi all’ADE, quindi sarà cura del contribuente effettuare il pagamento con i canali convenzionali(Banca, Poste,ecc) in caso di crediti da compensare si può acquistare il servizio aggiuntivo per l’invio.</p>
-</div>
-<div class="service-box">
-<h4>Contabilità in regime semplificato (imprese e professionisti) - 1300€ annuali</h4>
-<button onclick="window.open('https://paypal.me/LDFstudiodati2025')">Acquista</button>
-<button onclick="toggleDetails('dettagli4')">Dettagli</button>
-<p id="dettagli4" class="hidden">Il servizio comprende:<br>• La contabilità delle fatture attive ,passive e corrispettivi;<br>• Gestione fatture estere con creazione autofattura<br>• La redazione delle Lipe Trimestrali;<br>• Redazione delle CU per i percipienti di ritenute d’acconto;<br>• La redazione della dichiarazione Iva annuale;<br>• La redazione della dichiarazione dei redditi;<br>• La redazione degli F24 ma non l’invio all’ADE vedere pacchetto aggiuntivo.</p>
-</div>
-</div>
-<div class="service-category">
-<h3>Servizi aggiuntivi per Imprese, Società di persone e Professionisti</h3>
-<div class="service-box">
-<h4>Invio fatture al sistema tessera sanitaria - 50€</h4>
-<button onclick="window.open('https://paypal.me/LDFstudiodati2025')">Acquista</button>
-<button onclick="toggleDetails('dettagli5')">Dettagli</button>
-<p id="dettagli5" class="hidden">Il servizio comprende l’invio dei dati delle fatture cartacee emesse ai pazienti dai medici, al sistema tessera sanitaria.</p>
-</div>
-<div class="service-box">
-<h4>Invio F24 (pacchetto da 10 invii) all’agenzia delle Entrate - 50€</h4>
-<button onclick="window.open('https://paypal.me/LDFstudiodati2025')">Acquista</button>
-<button onclick="toggleDetails('dettagli6')">Dettagli</button>
-<p id="dettagli6" class="hidden">L’addebito avverrà sul conto proprio dell’impresa o del professionista sarà cura del cliente dare mandato di pagamento e IBAN di addebito intestato al dichiarante.</p>
-</div>
-<div class="service-box">
-<h4>Invio F24 (pacchetto da 1 invio) all’agenzia delle Entrate - 10€</h4>
-<button onclick="window.open('https://paypal.me/LDFstudiodati2025')">Acquista</button>
-<button onclick="toggleDetails('dettagli7')">Dettagli</button>
-<p id="dettagli7" class="hidden">L’addebito avverrà sul conto proprio dell’impresa o del professionista sarà cura del cliente dare mandato di pagamento e IBAN di addebito intestato al dichiarante.</p>
-</div>
-<div class="service-box">
-<h4>Apertura, Modifica e Chiusura Partita Iva - 50€</h4>
-<button onclick="window.open('https://paypal.me/LDFstudiodati2025')">Acquista</button>
-<button onclick="toggleDetails('dettagli8')">Dettagli</button>
-<p id="dettagli8" class="hidden">Il servizio offre una guida per scegliere il codice Ateco più consono all’attività che si vuole svolgere e al regime contabile da applicare. Inoltre fornisco supporto anche per variazioni e chiusure della Partita Iva.</p>
-</div>
-<div class="service-box">
-<h4>Redazione modello reddituale per casse professionali - 50€</h4>
-<button onclick="window.open('https://paypal.me/LDFstudiodati2025')">Acquista</button>
-<button onclick="toggleDetails('dettagli9')">Dettagli</button>
-<p id="dettagli9" class="hidden">Il servizio comporta la redazione cartacea dei modelli reddituali delle casse previdenziali (Cassa forense, Inarcassa, Enpap, Enpam ecc), l’invio telematico dovrà essere effettuato dal professionista in quanto solitamente per l’accesso alle casse avviene tramite spid personale ma il prezzo comprende il supporto telefonico alla compilazione all’interno del sito del modello.</p>
-</div>
-<div class="service-box">
-<h4>Iscrizioni e variazioni al Registro imprese (ditte individuali) - 100€</h4>
-<button onclick="window.open('https://paypal.me/LDFstudiodati2025')">Acquista</button>
-<button onclick="toggleDetails('dettagli10')">Dettagli</button>
-<p id="dettagli10" class="hidden">Il servizio comprende iscrizioni e variazioni al Registro imprese, ma non comprende i diritti camerali, gli importi saranno comunicati tramite email prima dell’invio della pratica, con la modalità di pagamento degli stessi.</p>
-</div>
-</div>
-<div class="service-category">
-<h3>Altri Servizi</h3>
-<div class="service-box">
-<h4>Calcolo IMU - 30€</h4>
-<button onclick="window.open('https://paypal.me/LDFstudiodati2025')">Acquista</button>
-<button onclick="toggleDetails('dettagli11')">Dettagli</button>
-<p id="dettagli11" class="hidden">Il servizio vi supporta per il calcolo Imu dei vostri immobili presenti su tutto il territorio Italiano nelle scadenze del 16 giugno e 16 dicembre, predisponendo il modello F24 che può essere pagato in tutti gli sportelli convenzionali.</p>
-</div>
-<div class="service-box">
-<h4>Dichiarazione IMU - 20€</h4>
-<button onclick="window.open('https://paypal.me/LDFstudiodati2025')">Acquista</button>
-<button onclick="toggleDetails('dettagli12')">Dettagli</button>
-<p id="dettagli12" class="hidden">Tale adempimento è dovuto se vi sono state variazioni agli immobili non transitati per tramite un notaio o Agenzia delle Entrate.</p>
-</div>
-<div class="service-box">
-<h4>Redazione contratti di comodato e di locazione - 100€</h4>
-<button onclick="window.open('https://paypal.me/LDFstudiodati2025')">Acquista</button>
-<button onclick="toggleDetails('dettagli13')">Dettagli</button>
-<p id="dettagli13" class="hidden">Il servizio comprende anche la registrazione all’agenzia delle entrate ma non il pagamento dell’imposta di registro, che invece sarà addebitata su un conto corrente intestato al richiedente la registrazione di cui dovrete comunicare l’IBAN.</p>
-</div>
-</div>
-</section>
 
-
-            <h2>Servizi offerti e tariffe</h2>
-            <p><strong>⚠ La lista completa dei servizi e pulsanti sarà inserita nella versione finale in HTML con i contenuti completi</strong></p>
-        </section>
-
-        <section id="contatti">
-            <h2>Contatti</h2>
-            <p><strong>Telefono:</strong> +39 349 6408105</p>
-            <p><strong>Email:</strong> laradfstudiodati@gmail.com | lara.di.filippo@pec.it</p>
-            <p><strong>Indirizzo:</strong> Via Nazionale Adriatica Sud 95/E, 66023 Francavilla al Mare (CH)</p>
-            <form action="#" method="post">
-                <input type="text" name="nome" placeholder="Nome" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <textarea name="messaggio" placeholder="Messaggio" required></textarea>
-                <button type="submit">Invia</button>
-            </form>
-        </section>
-
-        <section id="pagamenti">
-            <h2>Modalità di pagamento</h2>
-            <ul>
-                <li>PayPal: <a href="https://paypal.me/LDFstudiodati2025" target="_blank">paypal.me/LDFstudiodati2025</a></li>
-                <li>Bonifico: IBAN IT27Z0306977691100000005112</li>
-            </ul>
-        </section>
-    </main>
-
-    <footer>
-        <h3>Privacy Policy</h3>
-        <p>I dati forniti verranno trattati nel rispetto della normativa vigente sulla privacy (Regolamento UE 2016/679). Nessun dato verrà condiviso con terzi senza consenso esplicito.</p>
-    </footer>
-
-<script>
-function toggleDetails(id) {
-    var elem = document.getElementById(id);
-    if (elem.classList.contains("hidden")) {
-        elem.classList.remove("hidden");
-    } else {
-        elem.classList.add("hidden");
-    }
-}
-</script>
+<footer>
+  <p>© 2025 LDF Studio Dati – Tutti i diritti riservati</p>
+  <p><a href="#">Privacy Policy</a></p>
+</footer>
 </body>
-
 </html>
