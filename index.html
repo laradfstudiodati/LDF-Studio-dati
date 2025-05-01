@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Servizi di contabilità online e dichiarazioni fiscali per privati, imprese e professionisti. Esperienza, trasparenza e supporto su misura.">
+  <title>LDF Studio Dati – Contabilità e Dichiarazioni Online</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #fff; color: #222; }
+    header, footer { background: #1f4e5f; color: #fff; padding: 1em; text-align: center; }
+    nav { text-align: center; margin: 1em; }
+    .section { padding: 1em; max-width: 1200px; margin: auto; }
+    .orange-box { background: #ffa5001a; border-left: 6px solid #ffa500; margin: 1em 0; padding: 1em; }
+    button { margin: 0.5em; padding: 0.5em 1em; border: none; background: #ffa500; color: white; cursor: pointer; }
+    .service-group { margin-top: 2em; }
+    .service-title { color: #1f4e5f; font-weight: bold; margin-top: 1em; font-size: 1.2em; }
+    .details { display: none; padding: 0.5em 1em; background: #f9f9f9; border: 1px solid #ccc; }
+    .info-section { background: #f2f2f2; padding: 1em; }
+    .contact { margin-top: 1em; }
+  </style>
+  <script>
+    function toggleDetails(id) {
+      var elem = document.getElementById(id);
+      elem.style.display = elem.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>LDF Studio Dati</h1>
+    <p>Elaborazione dati contabili e fiscali</p>
+    <button onclick="document.getElementById('contatti').scrollIntoView()">Contatti</button>
+  </header>
+
+  <div class="section">
+    <h2>Chi sono</h2>
+    <p>Dott.ssa Lara Di Filippo – Esperienza ventennale in contabilità e dichiarazioni fiscali. Lavoro con precisione, trasparenza e vicinanza al cliente, offrendo consulenze su misura per professionisti, imprese e privati. Offro servizi di contabilità online e dichiarazioni fiscali online (730, Unico, Dichiarazioni Iva, Lipe)</p>
+  </div>
+
+  <div class="section service-group">
+    <h2>Servizi offerti e tariffe</h2>
+    <div class="orange-box">
+      <strong>Dichiarazione redditi 730 e UnicoPF senza partita iva (solo redditi italiani)</strong> - Euro 100,00<br>
+      <button onclick="window.open('https://paypal.me/LDFstudiodati2025')">Acquista</button>
+      <button onclick="toggleDetails('privati1')">Dettagli</button>
+      <div id="privati1" class="details">Il servizio comprende oltre alla redazione ed invio all’Agenzia dell’ Entrate della Dichiarazione, anche la redazione degli F24 ma non l’invio degli stessi all’ADE, quindi sarà cura del contribuente effettuare il pagamento con i canali convenzionali(Banca, Poste,ecc) in caso di crediti da compensare si può acquistare il servizio aggiuntivo per l’invio, non il visto di conformità</div>
+    </div>
+  </div>
+
+  <div class="section info-section">
+    <h2>Informazioni Utili</h2>
+    <p><a href="Guida_PMI_Stampabile_Grafica_Compatibile.pdf" download>📘 Scarica la guida per le Piccole e Medie Imprese (PDF)</a></p>
+  </div>
+
+  <div class="section contact" id="contatti">
+    <h2>Contatti</h2>
+    <p>📞 +39 349 6408105<br>
+    📧 laradfstudiodati@gmail.com | lara.di.filippo@pec.it<br>
+    📍 Via Nazionale Adriatica Sud 95/E – 66023 Francavilla al Mare (CH)</p>
+
+    <form action="mailto:laradfstudiodati@gmail.com" method="post" enctype="text/plain">
+      <label>Nome:<br><input type="text" name="nome"></label><br>
+      <label>Email:<br><input type="email" name="email"></label><br>
+      <label>Messaggio:<br><textarea name="messaggio"></textarea></label><br>
+      <button type="submit">Invia</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>© 2025 LDF Studio Dati - Tutti i diritti riservati</p>
+    <p><a href="#">Privacy Policy</a></p>
+  </footer>
+</body>
+</html>
